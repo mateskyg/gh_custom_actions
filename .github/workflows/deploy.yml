@@ -75,5 +75,5 @@ jobs:
           #bucket-region: us-east-2  /if you want to change region from the default
       - name: Output information
         run: |
-          echo  "Live URL: ${{ steps.deploy.out.website-url }}"
+          echo  "Live URL: ${{ steps.deploy.outputs.website-url }}"
 
