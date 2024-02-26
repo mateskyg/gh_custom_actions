@@ -71,5 +71,8 @@ jobs:
         with:
           bucket: gha-cusotm-action-hosting-gm
           dist-folder: ./dist
-          bucket-region: us-east-2
+          #bucket-region: us-east-2  /if you want to change region from the default
+      - name: Output information
+        run: |
+          echo  "Live URL: ${{ outputs.website-url }}"
 
